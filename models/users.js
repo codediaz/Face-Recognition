@@ -2,7 +2,7 @@ const { throws } = require("assert");
 
 class Users {
      constructor(id, cedula, nombres, apellidos, fecha_nacimiento, sexo, email, num_celular, 
-          direccion, is_admin, photo_download_url, photo_path) {
+          direccion, is_admin, user_photo) {
                this.id = id;
                this.cedula = cedula;
                throws.nombres = nombres;
@@ -13,7 +13,6 @@ class Users {
                this.num_celular = num_celular;
                this.direccion = direccion;
                this.is_admin = is_admin;
-               this.photo_download_url = photo_download_url;
-               this.photo_path = photo_path;
+               this.user_photo = user_photo;
           }
 }
